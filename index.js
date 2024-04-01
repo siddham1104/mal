@@ -38,7 +38,7 @@ app.use(express.json());
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     // change the location of your downloaded floder here 
-    cb(null, 'D:/Downloads/apk-inspector/apk-inspector-0.1.0');
+    cb(null, '/');
   },
   filename: function (req, file, cb) {
     cb(null, file.originalname);
